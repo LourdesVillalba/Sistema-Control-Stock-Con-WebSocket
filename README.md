@@ -333,8 +333,12 @@ Para que todo funcione, necesitamos 3 procesos corriendo en terminales separadas
 
     (Compila tu `app.js` donde vive Echo y vigila los cambios)
 
-> **Nota sobre comandos:**
-> Como mencionaste, si tienes un script personalizado, podrías unificar comandos. Por ejemplo, algunos desarrolladores configuran `package.json` para usar `concurrently` y correr `serve` y `npm run dev` juntos. O, como indicaste, podrías tener un script de `composer` para hacer esto. Para esta guía, nos mantenemos con los 3 comandos estándar para que sea claro qué proceso hace qué.
+> **Nota:**
+> Si ya tienes el proyecto Laravel todo configurado, puedes simplificar el proceso de escribir y monitorear php artisan serve y npm run dev en terminales separadas usando el comando:
+
+ ```bash
+    composer run dev
+   ```
 
 ### Prueba Final (La Prueba de Fuego)
 
