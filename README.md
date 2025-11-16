@@ -359,4 +359,4 @@ Verás el número cambiar de 50 a 49 instantáneamente, con un destello amarillo
 
 ---
 
-<img src="./build/assets/img/boceto.png" alt="Monitor de Stock" width="50%" />
+<img src="./public/build/assets/img/boceto.png" alt="Monitor de Stock"/>
