@@ -1,4 +1,3 @@
-````md
 # 📦 Monitor de Stock en Tiempo Real con Laravel 12 + Reverb
 
 Este documento es una guía paso a paso y un análisis detallado de cómo construir un monitor de inventario en tiempo real. El objetivo es que cualquier cambio en el stock de un producto en la base de datos se refleje instantáneamente en el navegador de todos los usuarios conectados, sin necesidad de recargar la página.
