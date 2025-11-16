@@ -1,4 +1,3 @@
-````md
 # 📦 Monitor de Stock en Tiempo Real con Laravel 12 + Reverb
 
 Este documento es una guía paso a paso y un análisis detallado de cómo construir un monitor de inventario en tiempo real. El objetivo es que cualquier cambio en el stock de un producto en la base de datos se refleje instantáneamente en el navegador de todos los usuarios conectados, sin necesidad de recargar la página.
@@ -134,7 +133,7 @@ class StockUpdated implements ShouldBroadcastNow
 }
 ```
 
-**Nota sobre `ShouldBroadcastNow`:** Al implementar esta interfaz, le decimos a Laravel que envíe este evento **inmediatamente** tan pronto como se dispare, sin usar el sistema de colas (queues). Para un monitor en tiempo real, esto es exactamente lo que queremos.
+> **Nota sobre `ShouldBroadcastNow`:** Al implementar esta interfaz, le decimos a Laravel que envíe este evento **inmediatamente** tan pronto como se dispare, sin usar el sistema de colas (queues). Para un monitor en tiempo real, esto es exactamente lo que queremos.
 
 ### Paso 3: El Gatillo (Conectar Modelo y Evento)
 
