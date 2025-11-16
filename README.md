@@ -133,7 +133,7 @@ class StockUpdated implements ShouldBroadcastNow
 }
 ```
 
-**Nota sobre `ShouldBroadcastNow`:** Al implementar esta interfaz, le decimos a Laravel que envíe este evento **inmediatamente** tan pronto como se dispare, sin usar el sistema de colas (queues). Para un monitor en tiempo real, esto es exactamente lo que queremos.
+> **Nota sobre `ShouldBroadcastNow`:** Al implementar esta interfaz, le decimos a Laravel que envíe este evento **inmediatamente** tan pronto como se dispare, sin usar el sistema de colas (queues). Para un monitor en tiempo real, esto es exactamente lo que queremos.
 
 ### Paso 3: El Gatillo (Conectar Modelo y Evento)
 
