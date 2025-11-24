@@ -2,9 +2,12 @@
 
 namespace App\Models;
 
-use App\Events\StockUpdated; // Importa el evento
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Events\StockUpdated; // Importa el evento
+use App\Events\ProductCreated;
+use App\Events\ProductDeleted;
+
 
 class Product extends Model
 {
@@ -20,5 +23,7 @@ class Product extends Model
      */
     protected $dispatchesEvents = [
         'updated' => StockUpdated::class,
+        'created' => ProductCreated::class, 
+        'deleted' => ProductDeleted::class, 
     ];
 }
